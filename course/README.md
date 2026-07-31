@@ -6,6 +6,7 @@
 
 - [`CURRICULUM.md`](./CURRICULUM.md)：完整 42 章课程地图、章节目标和阶段成果。
 - [`TEACHING_PROTOCOL.md`](./TEACHING_PROTOCOL.md)：所有新学习任务共同遵守的教学方法。
+- [`MULTI_AGENT_WORKFLOW.md`](./MULTI_AGENT_WORKFLOW.md)：主教师、概念教练、实践教练、评审员和面试官的协作规则。
 - [`CHAPTER_PROMPTS.md`](./CHAPTER_PROMPTS.md)：42 个可直接复制到新 Codex 任务的启动 Prompt。
 - [`PROGRESS.md`](./PROGRESS.md)：学习进度、问题和实验记录。
 
@@ -13,7 +14,7 @@
 
 1. 打开 `CHAPTER_PROMPTS.md`，复制当前章节的整个代码块。
 2. 在 `/Users/sulangxuan/project/VideoiOS/` 下新建一个 Codex 任务并粘贴。
-3. 老师会先读取教学协议和课程地图，只教授当前章，并一次推进一个小节。
+3. 老师会先读取教学协议、多角色工作流和课程地图，只教授当前章，并一次推进一个小节。
 4. 完成练习、代码、复述和章节验收后，更新 `PROGRESS.md`。
 5. 每个阶段保留可运行代码、测试、截图或演示视频，为最终作品集准备证据。
 
@@ -37,4 +38,6 @@
 - Effect 是处理指令；Filter 是视觉 Effect 的一种。
 - Project 保存编辑事实，不保存播放器、解码器、PixelBuffer、Texture 等运行时资源。
 - 预览和导出共享同一套时间、图层和效果语义。
+- 多角色按阶段调用；概念、实践、评审和验收不混在同一轮中。
+- 同一时刻最多一个代理修改代码，独立只读检查才允许并行。
 - “看懂”不算学会；能独立解释、实现、测试和排错才算完成。

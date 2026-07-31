@@ -4,6 +4,8 @@
 
 > 本课程大纲、教学协议与 42 个分章学习 Prompt 由 **GPT-5.6 Sol** 协助设计和整理。
 
+项目内置由 GPT-5.6 Sol 驱动的多角色教学配置：主任务担任主教师，并按学习阶段调用概念教练、iOS 实践教练、代码评审员和面试官。
+
 ## 学习内容
 
 - Asset、Clip、Track、Timeline、Effect 等编辑器核心模型
@@ -23,6 +25,8 @@
 4. 在[学习进度表](./course/PROGRESS.md)中持续记录。
 
 课程要求 Codex 在每个新任务中先读取[固定教学协议](./course/TEACHING_PROTOCOL.md)，一次只推进一个小节，以理解、实现、测试和独立表达作为章节验收标准。
+
+多角色职责和分配顺序见[多角色教学工作流](./course/MULTI_AGENT_WORKFLOW.md)。项目级代理配置位于 `.codex/agents/`，全局编排约束位于 [`AGENTS.md`](./AGENTS.md)。
 
 ## 当前状态
 
