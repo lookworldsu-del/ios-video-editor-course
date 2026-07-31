@@ -19,14 +19,27 @@
 
 ## 开始学习
 
-1. 阅读[课程使用说明](./course/README.md)。
-2. 查看[完整 42 章课程大纲](./course/CURRICULUM.md)。
-3. 从[章节启动 Prompt](./course/CHAPTER_PROMPTS.md)复制当前章节。
-4. 在[学习进度表](./course/PROGRESS.md)中持续记录。
+先克隆仓库：
+
+```bash
+git clone https://github.com/lookworldsu-del/ios-video-editor-course.git
+cd ios-video-editor-course
+```
+
+然后：
+
+1. 在 Codex 中把克隆后的仓库根目录添加为本地项目，并设为主目录。
+2. 从这个项目新建任务；不要从普通聊天或其他工作目录启动课程。
+3. 阅读[课程使用说明](./course/README.md)。
+4. 查看[完整 42 章课程大纲](./course/CURRICULUM.md)。
+5. 从[章节启动 Prompt](./course/CHAPTER_PROMPTS.md)复制当前章节。
+6. 在[学习进度表](./course/PROGRESS.md)中持续记录。
 
 课程要求 Codex 在每个新任务中先读取[固定教学协议](./course/TEACHING_PROTOCOL.md)，一次只推进一个小节，以理解、实现、测试和独立表达作为章节验收标准。
 
 多角色职责和分配顺序见[多角色教学工作流](./course/MULTI_AGENT_WORKFLOW.md)。项目级代理配置位于 `.codex/agents/`，全局编排约束位于 [`AGENTS.md`](./AGENTS.md)。
+
+只有从仓库本地项目新建的任务才能自动发现 `AGENTS.md`、`.codex/config.toml` 和项目级代理。单独浏览 GitHub 网页不会启用多角色配置。
 
 ## 当前状态
 
