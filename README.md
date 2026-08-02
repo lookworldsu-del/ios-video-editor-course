@@ -28,12 +28,13 @@ cd ios-video-editor-course
 
 然后：
 
-1. 在 Codex 中把克隆后的仓库根目录添加为本地项目，并设为主目录。
-2. 从这个项目新建任务；不要从普通聊天或其他工作目录启动课程。
-3. 阅读[课程使用说明](./course/README.md)。
-4. 查看[完整 42 章课程大纲](./course/CURRICULUM.md)。
-5. 从[章节启动 Prompt](./course/CHAPTER_PROMPTS.md)复制当前章节。
-6. 在[学习进度表](./course/PROGRESS.md)中持续记录。
+1. 确认当前位于 `learning/round-*` 学习分支；若要从零再学一轮，按[学习分支说明](./course/BRANCHING.md)创建新分支。
+2. 在 Codex 中把克隆后的仓库根目录添加为本地项目，并设为主目录。
+3. 从这个项目新建任务；不要从普通聊天或其他工作目录启动课程。
+4. 阅读[课程使用说明](./course/README.md)。
+5. 查看[完整 42 章课程大纲](./course/CURRICULUM.md)。
+6. 从[章节启动 Prompt](./course/CHAPTER_PROMPTS.md)复制当前章节。
+7. 在当前分支的[学习进度表](./course/PROGRESS.md)中持续记录。
 
 课程要求 Codex 在每个新任务中先读取[固定教学协议](./course/TEACHING_PROTOCOL.md)，一次只推进一个小节，以理解、实现、测试和独立表达作为章节验收标准。
 
@@ -41,6 +42,6 @@ cd ios-video-editor-course
 
 只有从仓库本地项目新建的任务才能自动发现 `AGENTS.md`、`.codex/config.toml` 和项目级代理。单独浏览 GitHub 网页不会启用多角色配置。
 
-## 当前状态
+## 学习状态
 
-目前处于第 1 章：建立 Asset、Clip、Effect 等编辑器核心概念。
+仓库不在 README 中硬编码当前章节。请以当前 `learning/round-*` 分支的 [`course/PROGRESS.md`](./course/PROGRESS.md) 为唯一进度来源；`course-base` 永远保持零进度。
