@@ -6,6 +6,7 @@
 
 - `course-base`：零进度模板。42 章始终为未开始，只保存公共课程、Prompt、代理配置和脚本。
 - `learning/round-NN`：第 NN 次学习。保存该轮的进度、复习笔记、实验、实现代码和作品证据。
+- `course/progress/chapter-NN.md`：该轮某一章的微目标和证据仪表盘，属于学习成果；公共模板 `course/progress/TEMPLATE.md` 才属于 `course-base`。
 - GitHub 默认分支：指向当前学习轮次，让仓库首页直接展示正在学习的内容。
 
 不要在 `course-base` 学习或记录进度，也不要把学习分支合并回 `course-base`。

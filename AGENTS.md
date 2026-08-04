@@ -4,8 +4,10 @@
 
 - `course/TEACHING_PROTOCOL.md`
 - `course/MULTI_AGENT_WORKFLOW.md`
+- `course/PROGRESS_TRACKING.md`
 - `course/CURRICULUM.md` 中当前章节
 - `course/PROGRESS.md`
+- 当前章 `course/progress/chapter-NN.md`（存在时）
 
 ## 主任务职责
 
@@ -14,6 +16,8 @@
 - 主教师负责拆解任务、选择角色、综合子代理结果和控制章节范围。
 - 子代理的原始输出不能取代主教师的教学判断。
 - 只有学习者真实完成验收后才能更新 `course/PROGRESS.md`。
+- 主教师是章节微进度的唯一维护者；只有学习者提交可验证证据后才能更新当前章仪表盘。
+- 每次教学回复末尾必须运行 `scripts/show-learning-progress.sh NN`，展示当前进度条、唯一小目标和解锁能力。
 
 ## 角色分配
 
@@ -30,11 +34,13 @@
 - 同一时刻最多允许一个子代理修改工作区。
 - 主教师必须等待所需子代理返回，再给学习者统一、去重后的结论。
 - 代理未返回不代表学习者完成；通过标准以教学协议和实际证据为准。
+- 不为进度计数新增子代理；确定性脚本负责展示，现有角色只提供证据和状态建议。
 
 ## 学习分支规则
 
 - `course-base` 是零进度课程模板，只接收课程、Prompt、代理配置和公共脚本更新。
 - `learning/round-NN` 是独立学习轮次，学习进度、复习笔记、实验、代码和作品证据只能写入当前学习分支。
+- `course/progress/chapter-NN.md` 是该学习轮次的章节微进度，也禁止写入或反向合并到 `course-base`；`course/progress/TEMPLATE.md` 除外。
 - 开始章节教学前必须确认当前分支匹配 `learning/round-*`；位于 `course-base`、`main`、游离 HEAD 或其他分支时停止教学，并提示学习者创建或切换学习分支。
 - 新一轮学习必须从最新的 `origin/course-base` 创建，使用 `scripts/start-learning-round.sh <轮次>`。
 - 公共课程更新只允许从 `course-base` 合并到学习分支，禁止把学习分支反向合并到 `course-base`。
