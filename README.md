@@ -36,6 +36,8 @@ cd ios-video-editor-course
 6. 从[章节启动 Prompt](./course/CHAPTER_PROMPTS.md)复制当前章节。
 7. 在当前分支的[学习进度表](./course/PROGRESS.md)中持续记录。
 
+教学任务会在每次回复末尾显示章节学习仪表盘：进度条只统计已经通过证据验证的微目标，并明确当前唯一小目标与完成后解锁的能力。规则见[章节学习仪表盘协议](./course/PROGRESS_TRACKING.md)。
+
 课程要求 Codex 在每个新任务中先读取[固定教学协议](./course/TEACHING_PROTOCOL.md)，一次只推进一个小节，以理解、实现、测试和独立表达作为章节验收标准。
 
 多角色职责和分配顺序见[多角色教学工作流](./course/MULTI_AGENT_WORKFLOW.md)。项目级代理配置位于 `.codex/agents/`，全局编排约束位于 [`AGENTS.md`](./AGENTS.md)。

@@ -9,6 +9,8 @@
 - [`MULTI_AGENT_WORKFLOW.md`](./MULTI_AGENT_WORKFLOW.md)：主教师、概念教练、实践教练、评审员和面试官的协作规则。
 - [`CHAPTER_PROMPTS.md`](./CHAPTER_PROMPTS.md)：42 个可直接复制到新 Codex 任务的启动 Prompt。
 - [`PROGRESS.md`](./PROGRESS.md)：学习进度、问题和实验记录。
+- [`PROGRESS_TRACKING.md`](./PROGRESS_TRACKING.md)：章节微目标、证据状态和实时仪表盘规则。
+- [`progress/TEMPLATE.md`](./progress/TEMPLATE.md)：每章学习仪表盘模板。
 - [`BRANCHING.md`](./BRANCHING.md)：零进度模板、独立学习轮次和 GitHub 展示规则。
 
 ## 每章学习方法
@@ -18,8 +20,9 @@
 3. 从这个本地项目新建任务；项目级代理只会在以仓库为上下文的新任务中自动加载。
 4. 打开 `CHAPTER_PROMPTS.md`，复制当前章节的整个代码块并粘贴到新任务。
 5. 老师会读取教学协议、多角色工作流、当前章节和学习进度，只教授当前章，并一次推进一个小节。
-6. 完成练习、代码、复述和章节验收后，只更新当前学习分支的 `PROGRESS.md`。
-7. 每个阶段保留可运行代码、测试、截图或演示视频，为最终作品集准备证据。
+6. 每次回复末尾查看由 `scripts/show-learning-progress.sh` 计算的进度条、当前小目标和解锁能力。
+7. 完成练习、代码、复述和章节验收后，只更新当前学习分支的 `PROGRESS.md` 和章节仪表盘。
+8. 每个阶段保留可运行代码、测试、截图或演示视频，为最终作品集准备证据。
 
 ## 贯穿全课的项目
 
